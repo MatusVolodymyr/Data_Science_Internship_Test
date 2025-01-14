@@ -1,0 +1,86 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "mountains-ner-dataset",
+  "dataset_size": 2830100,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/telord/mountains-ner-dataset@a086868ec3fb3336574e24284c74e19e127e9d4d/data/train-00000-of-00001.parquet": {
+      "num_bytes": 810896,
+      "checksum": null
+    },
+    "hf://datasets/telord/mountains-ner-dataset@a086868ec3fb3336574e24284c74e19e127e9d4d/data/val-00000-of-00001.parquet": {
+      "num_bytes": 105930,
+      "checksum": null
+    },
+    "hf://datasets/telord/mountains-ner-dataset@a086868ec3fb3336574e24284c74e19e127e9d4d/data/test-00000-of-00001.parquet": {
+      "num_bytes": 108503,
+      "checksum": null
+    }
+  },
+  "download_size": 1025329,
+  "features": {
+    "sentence": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 3855429,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 2269097,
+      "num_examples": 3827,
+      "dataset_name": "mountains-ner-dataset"
+    },
+    "val": {
+      "name": "val",
+      "num_bytes": 277255,
+      "num_examples": 478,
+      "dataset_name": "mountains-ner-dataset"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 283748,
+      "num_examples": 479,
+      "dataset_name": "mountains-ner-dataset"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
