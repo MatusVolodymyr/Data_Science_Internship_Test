@@ -29,22 +29,21 @@ H:\DATA_SCIENCE_INTERNSHIP_TEST\TASK_2
 Ensure you have Python 3 installed. Install the required libraries using the following command:
 
 ```bash
+python -m venv task2_env
 pip install -r requirements.txt
 ```
 Alternatively, you can create a Conda environment:
 ```bash
-conda create --name env_name --file requirements_conda.txt
+conda create --name task2_env --file requirements_conda.txt
 ```
 
 ## Files and Directories
 - `dataset_creation.py`: This script preprocesses satellite images from datasets. Calling this script is optional as the processed images are already available in the `processed_images` folder.
 - `infer_model.py`: This script runs model inference on the preprocessed dataset.
-- `intern_task_2_demo.ipynb`: Jupyter notebook demonstrating the end-to-end process.
 - `model.py`: Contains the model definition and related utilities.
-- `README.md`: Project documentation.
 - `dataset`: Contains raw satellite RGB images (excluded from version control due to large size, can be manually downloaded from [this Google Drive link](https://drive.google.com/file/d/19h0kRre-dTeIt7AgvpBomxlqChK6uQEw/view?usp=sharing) to run `dataset_creation.py`).
-- `infer_results`: Stores preprocessed images in `.npy` format.
-- `results`: Stores output images, including match results.
+- `infer_results`: Stores output images, including match results.
+- `intern_task_2_demo.ipynb`: Jupyter notebook demonstrating the end-to-end process.
 
 ## Usage
 ### 1. Dataset Creation (Optional): If you need to recreate the dataset, run:

@@ -25,18 +25,19 @@ This task involves training a Named Entity Recognition (NER) model to identify m
 Ensure you have Python 3 installed. Install the required libraries using the following command:
 
 ```bash
+python -m venv task1_env
 pip install -r requirements.txt
 ```
 Alternatively, you can create a Conda environment:
 ```bash
-conda create --name env_name --file requirements_conda.txt
+conda create --name task1_env --file requirements_conda.txt
 ```
 
 ### Files and Directories
 
 - `dataset_creation.py`: This script loads the dataset and applies tokenization, saving the processed data for model training. (bataset is automaticly loaded from huggingface)
 - `train_model.py`: This script defines the model architecture, training parameters, and performs model training.
-- `infer_model.py`: This script loads the trained model and performs inference on new text inputs.
+- `infer_model.py`: This script loads trained model and performs inference on new text inputs.
 - `tokenized_dataset/`: Directory where the tokenized dataset is saved.
 - `ner_model/`: Directory where the trained model and tokenizer are saved (It will be automatically created after running `train_model.py`, or you can manually create it by downloading the weights from [this Google Drive link](https://drive.google.com/drive/folders/1m9i5t5lUgy_DTjf05jiRSyQaDfLV_lAS) to skip the training process).
 - `intern_task_1_demo.ipynb`: Jupyter notebook demonstrating the end-to-end process.

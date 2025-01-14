@@ -76,6 +76,5 @@ Each task has its own virtual environment to manage dependencies (the projects w
 ## Notes
 - Ensure you have Python 3 installed on your system.
 - Each task has a `requirements.txt` file listing the required Python packages. Use these files to install dependencies in the respective virtual environments.
-- Reports and suggestions for potential improvements are included within each task folder.
 
 
