@@ -89,7 +89,7 @@ class ImageMatcher:
         )
         
         # Save the figure
-        filename = f"results\matching_result_{iteration}.png"
+        filename = f"infer_results\matching_result_{iteration}.png"
         plt.savefig(filename)
         plt.close()
         print(f"Image saved as '{filename}'.")

@@ -10,9 +10,11 @@ This task involves training a Named Entity Recognition (NER) model to identify m
 ├── train_model.py             # Script for training the NER model
 ├── infer_model.py             # Script for model inference
 ├── tokenized_dataset/         # Directory containing the tokenized dataset
-├── ner_model/                 # Directory for the trained model and tokenizer
+├── dataset/                   # Directory containing the initial dataset
+├── ner_model/                 # Directory for the trained model and tokenizer (will be automatically created after running `train_model.py`)
 ├── requirements.txt           # List of dependencies
-├── requirements.txt           # List of dependencies(for conda usage)
+├── requirements.txt           # List of dependencies(for conda)
+├── intern-task-1_demo.ipynb   # Kaggle jupyter notebook with demo 
 └── README.md                  # This README file
 ```
 
@@ -25,22 +27,23 @@ Ensure you have Python 3 installed. Install the required libraries using the fol
 ```bash
 pip install -r requirements.txt
 ```
-or if youare using conda:
+Alternatively, you can create a Conda environment:
 ```bash
-conda create --name <env> --file requirements_conda.txt
+conda create --name env_name --file requirements_conda.txt
 ```
 
 ### Files and Directories
 
-- `dataset_creation.py`: This script loads the dataset and applies tokenization, saving the processed data for model training.
+- `dataset_creation.py`: This script loads the dataset and applies tokenization, saving the processed data for model training. (bataset is automaticly loaded from huggingface)
 - `train_model.py`: This script defines the model architecture, training parameters, and performs model training.
 - `infer_model.py`: This script loads the trained model and performs inference on new text inputs.
 - `tokenized_dataset/`: Directory where the tokenized dataset is saved.
-- `ner_model/`: Directory where the trained model and tokenizer are saved(will be created automaticly after train_model.py is executed, or can be created to load weights manualy from https://drive.google.com/drive/folders/1m9i5t5lUgy_DTjf05jiRSyQaDfLV_lAS, to skipp the training process).
+- `ner_model/`: Directory where the trained model and tokenizer are saved (It will be automatically created after running `train_model.py`, or you can manually create it by downloading the weights from [this Google Drive link](https://drive.google.com/drive/folders/1m9i5t5lUgy_DTjf05jiRSyQaDfLV_lAS) to skip the training process).
+- `intern_task_1_demo.ipynb`: Jupyter notebook demonstrating the end-to-end process.
 
 ## Usage
 
-### 1. Dataset Creation
+### 1. Dataset Creation (Optional): If you need to recreate the dataset, run:
 
 Run the `dataset_creation.py` script to load and preprocess the dataset:
 
@@ -76,7 +79,4 @@ For future enhancements, consider the following:
 2. **Hyperparameter Tuning**: Experiment with different learning rates, batch sizes, and number of epochs to optimize performance.
 3. **Data Augmentation**: Use techniques like synonym replacement or back-translation to augment the training data.
 
-## Conclusion
-
-This project demonstrates the workflow for developing an NER model using Python and transformer-based architectures. The provided scripts ensure a modular and clear approach to dataset preparation, model training, and inference.
 
