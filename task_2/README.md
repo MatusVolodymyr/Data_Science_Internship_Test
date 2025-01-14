@@ -42,7 +42,7 @@ conda create --name env_name --file requirements_conda.txt
 - `intern_task_2_demo.ipynb`: Jupyter notebook demonstrating the end-to-end process.
 - `model.py`: Contains the model definition and related utilities.
 - `README.md`: Project documentation.
-- `dataset`: Contains raw satellite images (excluded from version control due to large size, can be manually downloaded from [this Google Drive link](https://drive.google.com/file/d/19h0kRre-dTeIt7AgvpBomxlqChK6uQEw/view?usp=sharing) to run `dataset_creation.py`).
+- `dataset`: Contains raw satellite RGB images (excluded from version control due to large size, can be manually downloaded from [this Google Drive link](https://drive.google.com/file/d/19h0kRre-dTeIt7AgvpBomxlqChK6uQEw/view?usp=sharing) to run `dataset_creation.py`).
 - `infer_results`: Stores preprocessed images in `.npy` format.
 - `results`: Stores output images, including match results.
 
@@ -62,7 +62,7 @@ python infer_model.py
 The results will be saved in the `infer_results/` directory.
 
 ## Notes
-- The `dataset` directory is excluded from version control due to the large size of the images. Users must manually populate this directory with the necessary image files before running the scripts.
+- The `dataset` directory is excluded from version control due to the large size of the images. Users must manually populate this directory with the necessary image files from [this Google Drive link](https://drive.google.com/file/d/19h0kRre-dTeIt7AgvpBomxlqChK6uQEw/view?usp=sharing) before running the `dataset_creation.py` script.
 
 
 

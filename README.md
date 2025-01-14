@@ -31,7 +31,7 @@ This project is divided into two tasks:
 This task involves training a Named Entity Recognition model to identify mountain names in text. It includes dataset preparation, model training, and inference. Specific details and instructions for Task 1 are provided in its respective `README.md` file.
 
 ### Task 2: Image Matching
-This task involves developing an algorithm to match satellite images from different seasons using a pre-trained model. It includes image preprocessing, model training, and inference. Specific details and instructions for Task 2 are provided in its respective `README.md` file.
+This task involves developing an algorithm to match satellite images from different seasons using a pre-trained model. It includes image preprocessing, and inference. Specific details and instructions for Task 2 are provided in its respective `README.md` file.
 
 ## Setup Instructions
 

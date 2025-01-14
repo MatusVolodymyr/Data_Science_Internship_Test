@@ -71,12 +71,5 @@ python infer_model.py
 
 You can modify the text input in the script to test different sentences.
 
-## Improvements
-
-For future enhancements, consider the following:
-
-1. **Dataset Expansion**: Increase the size and diversity of the dataset to improve model generalization.
-2. **Hyperparameter Tuning**: Experiment with different learning rates, batch sizes, and number of epochs to optimize performance.
-3. **Data Augmentation**: Use techniques like synonym replacement or back-translation to augment the training data.
 
 
