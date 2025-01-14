@@ -2,12 +2,13 @@ import torch
 from transformers import DistilBertTokenizerFast
 from datasets import load_dataset
 
-# Load dataset
+# Load a named entity recognition dataset from the Hugging Face Datasets library
 dataset = load_dataset("telord/mountains-ner-dataset")
 
-# Load the fast tokenizer
+# Load a pre-trained DistilBERT tokenizer for tokenizing the input text
 tokenizer = DistilBertTokenizerFast.from_pretrained('distilbert-base-cased')
 
+# Function to tokenize input text and align labels for token classification tasks
 def tokenize_and_align_labels(examples):
     label_all_tokens = True
     tokenized_inputs = tokenizer(examples['tokens'], truncation=True, is_split_into_words=True)
@@ -29,8 +30,8 @@ def tokenize_and_align_labels(examples):
     tokenized_inputs["labels"] = labels
     return tokenized_inputs
 
-# Apply tokenization and alignment to the dataset
+# Apply the tokenization and label alignment function to the dataset in a batched manner
 tokenized_datasets = dataset.map(tokenize_and_align_labels, batched=True)
 
-# Save the tokenized dataset
+# Save the processed tokenized dataset to disk for later use
 tokenized_datasets.save_to_disk('./tokenized_dataset')

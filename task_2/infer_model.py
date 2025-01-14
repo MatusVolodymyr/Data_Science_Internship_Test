@@ -4,7 +4,7 @@ from model import ImageMatcher
 # Initialize LoFTR with a pre-trained model
 loftr = LoFTR(pretrained='outdoor')
 
-# Create an instance of ImageMatcher with a maximum of (now only 3, cause i dont  have cuda....) images to process
+# Create an instance of ImageMatcher with a maximum of (for now only 2, cause i dont  have cuda installed....) images to process
 image_matcher = ImageMatcher(model=loftr, max_images=2)
 
 # Directory containing saved images as .npy files
