@@ -36,7 +36,7 @@ This task involves developing an algorithm to match satellite images from differ
 ## Setup Instructions
 
 ### Virtual Environments
-Each task has its own virtual environment to manage dependencies (projects were creted using conda envs):
+Each task has its own virtual environment to manage dependencies (the projects were created using conda envs, so it is recommended to use conda):
 
 1. **Task 1**:
    - Navigate to the `task_1/` directory.
